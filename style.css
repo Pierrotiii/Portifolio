@@ -1,0 +1,42 @@
+:root {
+    --azul-escuro: #0a192f;
+    --branco: #ffffff;
+    --accent: #64ffda;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--azul-escuro); color: var(--branco); line-height: 1.6; }
+
+/* Header */
+header { position: sticky; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background-color: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); z-index: 1000; }
+header nav ul { display: flex; list-style: none; gap: 20px; }
+header nav a { color: var(--branco); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+header nav a:hover { color: var(--accent); }
+
+/* Seções */
+.content-section { padding: 80px 5%; width: 100%; }
+.container { width: 90%; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+
+/* Sobre */
+.foto-perfil { width: 180px; height: 180px; background-color: #172a45; border-radius: 8px; margin-bottom: 20px; border: 3px solid var(--branco); }
+.texto-sobre { text-align: left; margin-top: 20px; }
+.texto-sobre p { margin-bottom: 15px; }
+.texto-sobre ul { margin: 15px 0 15px 20px; }
+
+/* Projetos (Fundo Branco) */
+.white-bg { background-color: var(--branco); color: var(--azul-escuro); }
+.white-bg h2, .white-bg h3, .white-bg p, .white-bg strong { color: var(--azul-escuro); }
+.card { padding: 30px; background: #f4f4f4; border-radius: 12px; max-width: 350px; transition: 0.3s; border: 1px solid #ddd; }
+.card:hover { transform: translateY(-10px); border-color: var(--azul-escuro); }
+.link-projeto { color: var(--azul-escuro); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--azul-escuro); }
+
+/* Contato */
+form { display: flex; flex-direction: column; width: 100%; max-width: 500px; gap: 15px; margin-top: 20px; }
+input, textarea { padding: 15px; border-radius: 8px; border: 1px solid #ffffff33; background: #172a45; color: white; }
+button { padding: 15px; background: var(--branco); color: var(--azul-escuro); border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+button:hover { background: var(--accent); }
+
+/* Footer */
+footer { padding: 40px; background-color: #061224; text-align: center; color: var(--branco); }
+footer a { color: var(--accent); text-decoration: none; }
